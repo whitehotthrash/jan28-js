@@ -14,14 +14,14 @@ mainContainer.appendChild(testimonial);
 window.addEventListener("keydown", (eventData) => {
   // when key is pressed, do stuff
   if (eventData.code === "Space"){
-    alert("Space has been pressed!");
+    console.log("Space has been pressed!");
     return
   }
 })
 
-document.getElementById("mainContainer").addEventListener("keydown", (eventData) => {
-  if (eventData.key === " "){
-    console.log("Space has been pressed");
-    return
-  }
-})
+// document.getElementById("mainContainer").addEventListener("keydown", (eventData) => {
+//   if (eventData.key === " "){
+//     console.log("Space has been pressed");
+//     return
+//   }
+// })
