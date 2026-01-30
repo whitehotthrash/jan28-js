@@ -17,10 +17,10 @@ window.addEventListener("keydown", (eventData) => {
     console.log("Space has been pressed!");
     return
   }
-  if (eventData.code === "Meta", (eventData) => {
+  if (eventData.code === "Meta") {
     console.log("Meta key has been pressed");
     return
-  })
+  }
 })
 
 // document.getElementById("mainContainer").addEventListener("keydown", (eventData) => {
