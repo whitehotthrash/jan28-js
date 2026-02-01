@@ -46,6 +46,23 @@ function sayGoodbye() {
 
 greet("sam", sayGoodbye);
 
+
+// function factory
+function greetUser(message) {
+
+	function greet(name) {
+		console.log(message + ", " + name)
+	}
+	
+	return name;
+}
+
+let sayHello = greetUser("Hello");
+sayHello("Tom");  // output: Hello, Tom
+
+let sayHi = greetUser("Hi");
+sayHi("Alan");  //output: Hi, Alan
+
 // document.getElementById("mainContainer").addEventListener("keydown", (eventData) => {
 //   if (eventData.key === " "){
 //     console.log("Space has been pressed");
