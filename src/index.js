@@ -23,6 +23,16 @@ window.addEventListener("keydown", (eventData) => {
   }
 })
 
+const button = document.getElementById('change-color-button');
+
+const elementToChange = document.getElementById('color-changeable-element');
+
+button.addEventListener('click', function() {
+
+  elementToChange.style.backgroundColor = 'red';
+
+});
+
 // document.getElementById("mainContainer").addEventListener("keydown", (eventData) => {
 //   if (eventData.key === " "){
 //     console.log("Space has been pressed");
