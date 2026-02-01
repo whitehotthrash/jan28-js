@@ -63,6 +63,20 @@ sayHello("Tom");  // output: Hello, Tom
 let sayHi = greetUser("Hi");
 sayHi("Alan");  //output: Hi, Alan
 
+// callstacks and callbacks -------
+
+
+// setTimeout will run synchronously, but the log is a callback, so it's output will be last in the console
+console.log('Hi!');
+
+setTimeout(() => {
+    console.log('Execute immediately.');
+}, 0);
+
+console.log('Bye!');
+
+
+
 // document.getElementById("mainContainer").addEventListener("keydown", (eventData) => {
 //   if (eventData.key === " "){
 //     console.log("Space has been pressed");
